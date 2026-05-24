@@ -95,7 +95,7 @@ body {
 
 /* Hero secktion ---------------------------------------------------------------------*/
 .hero {
-  background-image: url(../img/hero-background.jpg);
+  background-image: url(../img/background/hero-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--col-white);
