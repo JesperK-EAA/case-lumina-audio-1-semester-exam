@@ -1,21 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
 :root {
   /* Font sizes */
-  --font-size-3xl: 4.3px;
-  --font-size-2xl: 2.98px;
+  --font-size-3xl: 4.3rem;
+  --font-size-2xl: 2.98rem;
   --font-size-xl: 1.73rem;
-  --font-size-lg: 1.44px;
+  --font-size-lg: 1.44rem;
   --font-size-md: 1.2rem;
   --font-size-sm: 1rem;
 
+  /* Font famaliy */
+  --font-poppins: "Poppins", sans-serif;
+  --font-sofia-sans: "Sofia Sans", sans-serif;
+
+  /* Font weight */
+  --font-bold: bold;
+  --font-semibold: 600;
+
   /* spacing */
-  --space-xs: 8px;
-  --space-size-sm: 16px;
-  --space-size-md: 24px;
-  --space-size-lg: 32px;
-  --space-size-xlg: 40px;
-  --space-size-2xl: 80px;
-  --space-size-3xl: 120px;
-  --space-size-4xl: 160px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-80: 80px;
+  --space-120: 120px;
+  --space-160: 160px;
 
   /* Colors */
   --col-white: #fff4f0;
@@ -38,4 +49,116 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+  color: var(--col-black);
+  line-height: 110%;
+}
+
+
+
+p {
+  font-family: var(--font-sofia-sans);
+  color: var(--col-black-nuancer);
+  line-height: 150%;
+}
+
+body {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.btn {
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--col-black);
+  background-color: var(--col-highlight);
+  border: none;
+  border-radius: 16px;
+  padding: var(--space-24);
+}
+
+
+/* Hero secktion */
+.hero {
+  background-image: url(../img/hero-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--col-white);
+  padding: var(--space-80);
+  padding-top: var(--space-40);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-80);
+}
+
+.hero-logo {
+  display: block;
+  margin-inline: auto;
+}
+
+/* The combine of all info EXCEPT logo */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+}
+
+.hero-content-about {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  max-width: 843px;
+}
+
+.hero-content-title {
+  font-size: var(--font-size-3xl);
+  color: var(--col-white);
+  text-transform: capitalize;
+}
+
+.hero-content-text {
+  color: var(--col-cream-linen);
+  font-size: var(--font-size-md);
+}
+
+
+/* The shop icon with price */
+.hero-cta {
+  display: flex;
+  gap: var(--space-12);
+}
+
+.hero-cta-price {
+  font-size: var(--font-size-2xl);
+  color: var(--col-white);
+  font-weight: bold;
+  font-family: var(--font-poppins);
+}
+
+/* heros social trust  */
+.hero-social {
+  background-color: var(--col-white);
+  padding: var(--space-12);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  max-width: 405px;
+}
+
+.hero-social-submitet {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  font-family: var(--font-poppins);
+  color: var(--col-black);
 }
