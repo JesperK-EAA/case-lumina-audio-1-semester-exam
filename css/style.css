@@ -2,12 +2,12 @@
 
 :root {
   /* Font sizes */
-  --font-size-3xl: 4.3rem;
-  --font-size-2xl: 2.98rem;
-  --font-size-xl: 1.73rem;
-  --font-size-lg: 1.44rem;
-  --font-size-md: 1.2rem;
-  --font-size-sm: 1rem;
+  --font-size-3xl: 4.3rem; /* 68.8px */
+  --font-size-2xl: 2.98rem; /* 47.68px */
+  --font-size-xl: 1.73rem; /* 27.68px */
+  --font-size-lg: 1.44rem; /* 23.04px */
+  --font-size-md: 1.2rem; /* 19.2px */
+  --font-size-sm: 1rem; /* 16px */
 
   /* Font famaliy */
   --font-poppins: "Poppins", sans-serif;
@@ -62,12 +62,18 @@ h6 {
   line-height: 110%;
 }
 
-
+h2 {
+  font-size: var(--font-size-2xl);
+}
 
 p {
   font-family: var(--font-sofia-sans);
   color: var(--col-black-nuancer);
   line-height: 150%;
+}
+
+html {
+  background-color: var(--col-white);
 }
 
 body {
@@ -87,8 +93,7 @@ body {
   padding: var(--space-24);
 }
 
-
-/* Hero secktion */
+/* Hero secktion ---------------------------------------------------------------------*/
 .hero {
   background-image: url(../img/hero-background.jpg);
   background-repeat: no-repeat;
@@ -131,7 +136,6 @@ body {
   font-size: var(--font-size-md);
 }
 
-
 /* The shop icon with price */
 .hero-cta {
   display: flex;
@@ -161,4 +165,50 @@ body {
   font-weight: bold;
   font-family: var(--font-poppins);
   color: var(--col-black);
+}
+
+
+/* Benefits ---------------------------------------------------------------------*/
+
+.benefit {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-80);
+
+  margin: var(--space-160) 0px;
+}
+
+.benefit-title {
+  text-align: center;
+}
+
+.benefit-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-80);
+}
+
+/* Eatch of the benefits box with its icons and info  */
+.benefit-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  text-align: center;
+  max-width: 500px;
+}
+
+.benefit-content-box-icon {
+  width: 48px;
+  margin-inline: auto;
+}
+
+.benefit-content-box-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.benefit-content-box-title {
+  font-size: var(--font-size-xl);
 }
