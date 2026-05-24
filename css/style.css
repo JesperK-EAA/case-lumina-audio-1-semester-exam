@@ -167,7 +167,6 @@ body {
   color: var(--col-black);
 }
 
-
 /* Benefits ---------------------------------------------------------------------*/
 
 .benefit {
@@ -211,4 +210,33 @@ body {
 
 .benefit-content-box-title {
   font-size: var(--font-size-xl);
+}
+
+/* use-of-product ---------------------------------------------------------------------*/
+
+.product-use-title {
+  text-align: center;
+  margin-bottom: var(--space-80);
+}
+
+.product-use-box {
+  display: flex;
+  background-color: var(--col-white-nuancer);
+}
+
+.product-use-box-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-32);
+  padding: 0 var(--space-80);
+}
+
+.product-use-box-info-title {
+  font-size: var(--font-size-xl);
+}
+
+.product-use-box-img {
+  width: 50%;
 }
