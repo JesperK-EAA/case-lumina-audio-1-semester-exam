@@ -1,6 +1,35 @@
-
 :root {
-  
+  /* Font sizes */
+  --font-size-3xl: 4.3px;
+  --font-size-2xl: 2.98px;
+  --font-size-xl: 1.73rem;
+  --font-size-lg: 1.44px;
+  --font-size-md: 1.2rem;
+  --font-size-sm: 1rem;
+
+  /* spacing */
+  --space-xs: 8px;
+  --space-size-sm: 16px;
+  --space-size-md: 24px;
+  --space-size-lg: 32px;
+  --space-size-xlg: 40px;
+  --space-size-2xl: 80px;
+  --space-size-3xl: 120px;
+  --space-size-4xl: 160px;
+
+  /* Colors */
+  --col-white: #fff4f0;
+  --col-white-nuancer: #fdebe9;
+  --col-black: #301824;
+  --col-black-nuancer: #4c3943;
+  --col-highlight: #ff92ac;
+  --col-highlight-nuancer: #fa5d81;
+
+  /* Product colors */
+  --col-dusty-rose: #de9498;
+  --col-cream-linen: #e9e0de;
+  --col-sage-green: #87937c;
+  --col-lavender-mist: #dfb9e6;
 }
 
 /* Reset */
