@@ -97,7 +97,7 @@ button {
   color: var(--col-black);
 }
 
-section.section-lock {
+section.section-size-lock {
   margin-inline: auto;
   max-width: 1440px;
 }
