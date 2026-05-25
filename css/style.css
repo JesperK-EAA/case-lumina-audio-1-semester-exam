@@ -244,3 +244,53 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* use-of-product ---------------------------------------------------------------------*/
+
+.product {
+  margin: var(--space-160) 0px;
+}
+
+.product-title {
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  margin-bottom: var(--space-40)
+}
+
+/* Helps place the cards and main img in a correct layout */
+.product-container {
+  display: flex;
+  align-items: center;
+}
+
+.product-container-functions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+}
+
+.product-image {
+  width: 100%;
+}
+
+/* For eviduel card design/layout */
+.product-card {
+  padding: var(--space-16);
+  border: 2px solid var(--col-black);
+  border-radius: var(--space-16);
+  width: 404px;
+}
+
+.product-card-info {
+  display: flex;
+  gap: var(--space-16);
+  margin-bottom: var(--space-16);
+}
+
+.product-card-info-icon {
+  width: var(--space-32);
+}
+
+.product-card-info-title {
+  font-size: var(--font-size-lg);
+}
