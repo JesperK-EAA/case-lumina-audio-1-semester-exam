@@ -76,9 +76,17 @@ html {
   background-color: var(--col-white);
 }
 
-body {
-  max-width: 1440px;
+footer {
+  background-color: var(--col-white-nuances);
+  padding: var(--space-40) var(--space-80);
+}
+
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-inline: auto;
+  max-width: 1440px;
 }
 
 button {
@@ -87,6 +95,11 @@ button {
   background-color: transparent;
   font-family: var(--font-poppins);
   color: var(--col-black);
+}
+
+section.section-lock {
+  margin-inline: auto;
+  max-width: 1440px;
 }
 
 .btn {
@@ -101,6 +114,7 @@ button {
 /* Hero secktion ---------------------------------------------------------------------*/
 .hero {
   background-image: url(../img/background/background-images/hero-background.jpg);
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--col-white);
@@ -116,6 +130,8 @@ button {
 
 /* The combine of all info EXCEPT logo */
 .hero-content {
+  margin-inline: auto;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: var(--space-40);
@@ -330,14 +346,6 @@ button {
   width: 405px;
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: var(--col-white-nuances);
-  padding: var(--space-40) var(--space-80);
-}
-
 /* product color  ---------------------------------------------------------------------*/
 
 .product-color {
@@ -348,9 +356,16 @@ footer {
   position: relative;
 }
 
+.product-color-container {
+  display: flex;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
 .product-img {
   z-index: 1;
   display: flex;
+  align-items: center;
   width: 50%;
 }
 
@@ -401,6 +416,7 @@ footer {
 
 .product-color-bg-bottom {
   position: absolute;
+  width: 100%;
   bottom: 0;
   right: 0;
   z-index: 0;
@@ -409,7 +425,7 @@ footer {
 .product-color-info-buttons {
   display: flex;
   justify-content: center;
-  gap: var(--space-80);
+  gap: var(--space-40);
 }
 
 .product-color-info-buttons button {
@@ -555,6 +571,8 @@ footer {
   margin-top: var(--space-120) 0;
   margin: var(--space-160), 0;
   background-image: url(../img/background/background-images/cta-background.jpg);
+  background-position: center;
+
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--col-white);
@@ -595,6 +613,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: var(--space-40);
+  max-width: 1120px;
+  margin-inline: auto;
 }
 
 .faq-question-title {
