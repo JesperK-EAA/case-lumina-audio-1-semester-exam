@@ -437,3 +437,49 @@ footer {
 #lavender-mist {
   background-color: var(--col-lavender-mist);
 }
+
+/* FAQ  ---------------------------------------------------------------------*/
+
+.faq {
+  margin: var(--space-160);
+}
+
+.faq h2 {
+  text-align: center;
+  margin-bottom: var(--space-40);
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+}
+
+.faq-question-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.faq-question {
+  background-color: var(--col-white-nuances);
+  padding: var(--space-32) var(--space-24);
+  border: 2px solid var(--col-black);
+  border-radius: var(--space-8);
+  
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+}
+
+.faq-question h3 {
+  font-size: var(--font-size-lg);
+}
+
+.faq-question-info {
+  display: none;
+}
+
+.faq-question-info.open {
+  display: block;
+}
