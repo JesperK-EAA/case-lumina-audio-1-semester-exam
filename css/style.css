@@ -438,9 +438,67 @@ footer {
   background-color: var(--col-lavender-mist);
 }
 
+/* Testimonial  ---------------------------------------------------------------------*/
+
+.testimonial {
+  margin: var(--space-160) 0;
+}
+
+.testimonial h2 {
+  margin-bottom: var(--space-160);
+  text-align: center;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-120) var(--space-32) ;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  position: relative;
+  background-color: var(--col-white-nuances);
+  width: 405px;
+
+  text-align: center;
+  padding-inline: var(--space-16);
+  padding-bottom: var(--space-32);
+  padding-top: var(--space-80);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-32);
+  border: 2px solid var(--col-black-nuances);
+  border-radius: var(--space-16);
+}
+
+.testimonial-card h3 {
+  margin-bottom: var(--space-16);
+}
+
+.testimonial-card-quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: -40px;
+}
+
+.testimonial-card-pic {
+
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+  top: -50%;
+  margin-top: 75px;
+  z-index: 1;
+}
+
 /* Last CTA  ---------------------------------------------------------------------*/
 
 .last-cta {
+  margin-top: var(--space-120) 0;
   margin: var(--space-160), 0;
   background-image: url(../img/background/background-images/cta-background.jpg);
   background-repeat: no-repeat;
@@ -465,9 +523,8 @@ footer {
 }
 
 .last-cta-container-info {
-  margin-bottom: var(--space-80)
+  margin-bottom: var(--space-80);
 }
-
 
 /* FAQ  ---------------------------------------------------------------------*/
 
