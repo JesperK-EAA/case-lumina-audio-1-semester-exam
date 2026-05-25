@@ -440,10 +440,57 @@ footer {
 
 /* Gallery  ---------------------------------------------------------------------*/
 
+.gallery {
+  margin: var(--space-160) 0;
+  text-align: center;
+}
 
+.gallery h2 {
+  margin-bottom: var(--space-80);
+}
 
+.gallery-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-32);
+  overflow: hidden;
+}
 
+.gallery-img {
+  border-radius: var(--space-16);
+}
 
+.gallery-img.selected {
+  width: 404px;
+  height: 555px;
+}
+
+.gallery-img-wrapper {
+  position: relative;
+}
+
+.gallery-img-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery-left-arrow,
+.gallery-right-arrow {
+  position: absolute;
+  z-index: 2;
+}
+
+.gallery-left-arrow {
+  left: var(--space-16);
+}
+
+.gallery-right-arrow {
+  right: var(--space-16);
+}
 
 /* Testimonial  ---------------------------------------------------------------------*/
 
