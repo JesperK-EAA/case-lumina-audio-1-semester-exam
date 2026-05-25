@@ -30,11 +30,11 @@
 
   /* Colors */
   --col-white: #fff4f0;
-  --col-white-nuancer: #fdebe9;
+  --col-white-nuances: #fdebe9;
   --col-black: #301824;
-  --col-black-nuancer: #4c3943;
+  --col-black-nuances: #4c3943;
   --col-highlight: #ff92ac;
-  --col-highlight-nuancer: #fa5d81;
+  --col-highlight-nuances: #fa5d81;
 
   /* Product colors */
   --col-dusty-rose: #de9498;
@@ -68,7 +68,7 @@ h2 {
 
 p {
   font-family: var(--font-sofia-sans);
-  color: var(--col-black-nuancer);
+  color: var(--col-black-nuances);
   line-height: 150%;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 .product-use-box {
-  background-color: var(--col-white-nuancer);
+  background-color: var(--col-white-nuances);
   display: flex;
 }
 
@@ -324,4 +324,12 @@ body {
 
 .mobile-app-img {
   width: 405px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--col-white-nuances);
+  padding: var(--space-40) var(--space-80);
 }
