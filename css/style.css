@@ -441,7 +441,7 @@ footer {
 /* Testimonial  ---------------------------------------------------------------------*/
 
 .testimonial {
-  margin: var(--space-160) 0;
+  margin: var(--space-120) 0;
 }
 
 .testimonial h2 {
@@ -450,25 +450,26 @@ footer {
 }
 
 .testimonial-container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 405px);
+  grid-auto-rows: 1fr;
+  place-items: center;
   justify-content: center;
-  align-items: center;
-  gap: var(--space-120) var(--space-32) ;
-  flex-wrap: wrap;
+  gap: var(--space-120) var(--space-32);
 }
 
 .testimonial-card {
   position: relative;
   background-color: var(--col-white-nuances);
-  width: 405px;
-
+  /*  width: 405px; */
+  height: 100%;
   text-align: center;
   padding-inline: var(--space-16);
   padding-bottom: var(--space-32);
   padding-top: var(--space-80);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: var(--space-32);
   border: 2px solid var(--col-black-nuances);
   border-radius: var(--space-16);
@@ -486,7 +487,6 @@ footer {
 }
 
 .testimonial-card-pic {
-
   position: absolute;
   left: 50%;
   margin-left: -75px;
