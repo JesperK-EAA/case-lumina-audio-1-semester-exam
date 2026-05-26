@@ -312,28 +312,29 @@
         <div class="product-color-container">
           <div class="product-img">
             <div class="product-img-selecter">
-              <button>
+
+              <button type="button" onclick="productImgChange(this)">
                 <img
                   id="img-deafult"
-                  class="product-color-img select"
+                  class="product-color-img selected-img"
                   src="img/product/dusty-rose/dusty-rose-deafult.png"
-                  alt=""
+                  alt="img of the front of the product"
                 />
               </button>
-              <button>
+              <button type="button" onclick="productImgChange(this)">
                 <img
                  id="img-right"
                   class="product-color-img"
                   src="img/product/dusty-rose/dusty-rose-right.png"
-                  alt=""
+                  alt="img from the right side of the product"
                 />
               </button>
-              <button>
+              <button type="button" onclick="productImgChange(this)">
                 <img
                  id="img-left"
                   class="product-color-img"
                   src="img/product/dusty-rose/dusty-rose-left.png"
-                  alt=""
+                  alt="img from the left side of the product"
                 />
               </button>
             </div>
@@ -343,7 +344,7 @@
                id="main-img"
                 class="product-img-slected"
                 src="img/product/dusty-rose/dusty-rose-deafult.png"
-                alt=""
+                alt="Main img that will be focused on"
               />
             </figure>
           </div>
@@ -361,7 +362,7 @@
             </div>
 
             <div class="product-color-info-buttons">
-              <div class="product-color-info-buttons-container"><button onclick="productColorChange(this, 'Dusty Rose')" id="dusty-rose" class="color-change-btn selected"></button></div>
+              <div class="product-color-info-buttons-container"><button onclick="productColorChange(this, 'Dusty Rose')" id="dusty-rose" class="color-change-btn selected-color"></button></div>
               <div class="product-color-info-buttons-container"><button onclick="productColorChange(this, 'Cream Linen')" id="cream-linen" class="color-change-btn" ></button></div>
               <div class="product-color-info-buttons-container"><button onclick="productColorChange(this, 'Sage Green')" id="sage-green" class="color-change-btn"></button></div>
               <div class="product-color-info-buttons-container"><button onclick="productColorChange(this, 'Lavender Mist')" id="lavender-mist" class="color-change-btn"></button></div>

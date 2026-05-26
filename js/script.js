@@ -1,16 +1,15 @@
 "use strict";
 
 /* Get product data form json file */
-let productData = []
+let productData = [];
 
 async function fetchProductData() {
   const response = await fetch("product-data.json");
   const data = await response.json();
-  productData = data; 
-};
+  productData = data;
+}
 
 fetchProductData();
-
 
 /* Product color and img changer */
 const mainImg = document.getElementById("main-img");
@@ -20,16 +19,27 @@ const deafultImg = document.getElementById("img-deafult");
 const leftImg = document.getElementById("img-left");
 const rightImg = document.getElementById("img-right");
 
-const allColorBtn = querySelector(".color-change-btn")
+const allColorBtn = document.querySelector(".color-change-btn");
 
 function productColorChange(event, color) {
-  document.querySelector(".selected").classList.toggle("selected");;
-  event.classList.toggle("selected");
-  
+  document.querySelector(".selected-color").classList.remove("selected-color");
+  event.classList.add("selected-color");
 
-  productData.forEach(pro => {
+  let selectedImg = document.querySelector(".selected-img").src;
+  let imgDirection = "";
+
+  productData.forEach((pro) => {
     if (pro.productColor == color) {
-      mainImg.src = `img/product/${pro.imgFolder}/${pro.deafultImg}`;
+
+      if (selectedImg.includes("right")) {
+        imgDirection = pro.rightImg;
+      } else if (selectedImg.includes("left")) {
+        imgDirection = pro.leftImg;
+      } else {
+        imgDirection = pro.deafultImg;
+      }
+
+      mainImg.src = `img/product/${pro.imgFolder}/${imgDirection}`;
       colorTitle.innerHTML = pro.productColor;
       colorDesc.innerHTML = pro.colorDesc;
       deafultImg.src = `img/product/${pro.imgFolder}/${pro.deafultImg}`;
@@ -39,9 +49,14 @@ function productColorChange(event, color) {
   });
 }
 
-function productImgChange(img) {}
+function productImgChange(event) {
+  const imgChild = event.children[0];
 
+  document.querySelector(".selected-img").classList.remove("selected-img");
+  imgChild.classList.add("selected-img");
 
+  mainImg.src = imgChild.src;
+}
 
 /* Faq open and losing of faq cards */
 

@@ -382,7 +382,7 @@ section.section-size-lock {
   border-radius: var(--space-8);
 }
 
-.product-color-img.select {
+.product-color-img.selected-img {
   border-width: 4px;
   /* background-color: var(--col-highlight); */
 }
@@ -445,7 +445,7 @@ section.section-size-lock {
   border-radius: 999px;
 }
 
-.product-color-info-buttons.selected button {
+.product-color-info-buttons.selected-color button {
   width: 100%;
   height: 100%;
 }
@@ -463,7 +463,7 @@ section.section-size-lock {
   background-color: var(--col-lavender-mist);
 }
 
-.product-color-info-buttons .selected {
+.product-color-info-buttons .selected-color {
   width: 100px;
   height: 100px;
 }
