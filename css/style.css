@@ -407,14 +407,14 @@ section.section-size-lock {
 
 /* Backgournd img */
 
-.product-color-bg-top {
+#product-color-bg-top {
   position: absolute;
   top: 0;
   right: 0;
   z-index: 0;
 }
 
-.product-color-bg-bottom {
+#product-color-bg-bottom {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -662,7 +662,6 @@ section.section-size-lock {
   display: block;
 }
 
-
 /* Popup  ---------------------------------------------------------------------*/
 
 .popup {
@@ -672,7 +671,7 @@ section.section-size-lock {
   top: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
-  
+
   border-radius: var(--space-8);
   background-color: var(--col-white-nuances);
   flex-direction: column;
@@ -706,4 +705,3 @@ section.section-size-lock {
 #overlay.open {
   display: block;
 }
-

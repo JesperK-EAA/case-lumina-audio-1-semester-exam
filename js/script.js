@@ -18,6 +18,8 @@ const colorDesc = document.getElementById("color-desc");
 const deafultImg = document.getElementById("img-deafult");
 const leftImg = document.getElementById("img-left");
 const rightImg = document.getElementById("img-right");
+const backgroundTop = document.getElementById("product-color-bg-top");
+const backgroundBottom = document.getElementById("product-color-bg-bottom");
 
 const allColorBtn = document.querySelector(".color-change-btn");
 
@@ -30,7 +32,6 @@ function productColorChange(event, color) {
 
   productData.forEach((pro) => {
     if (pro.productColor == color) {
-
       if (selectedImg.includes("right")) {
         imgDirection = pro.rightImg;
       } else if (selectedImg.includes("left")) {
@@ -45,6 +46,9 @@ function productColorChange(event, color) {
       deafultImg.src = `img/product/${pro.imgFolder}/${pro.deafultImg}`;
       leftImg.src = `img/product/${pro.imgFolder}/${pro.leftImg}`;
       rightImg.src = `img/product/${pro.imgFolder}/${pro.rightImg}`;
+
+      backgroundTop.src = `img/background/backgorund-designs/${pro.backgroundTop}`;
+      backgroundBottom.src = `img/background/backgorund-designs/${pro.backgroundBottom}`;
     }
   });
 }
