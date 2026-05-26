@@ -94,19 +94,35 @@ function popupToggle(type) {
 }
 
 /* Gallery carousel */
+let previusVisibleIndex = [];
 
 function carouselBtn(event) {
   const selectedImg = document.querySelector(".gallery-selected");
   const galleryList = document.querySelectorAll(".gallery-img");
   let selectedIndex;
+  previusVisibleIndex = [];
 
   /* Looks for the element with most classes and find the selected img */
   for (let index = 0; index < galleryList.length; index++) {
     if (galleryList[index].classList.length > 1) {
       selectedIndex = index;
-      break;
+    }
+
+    let parentEl = galleryList[index].parentElement;
+
+    if (parentEl.classList.contains("gallery-img-visible")) {
+      previusVisibleIndex.push(index);
+      parentEl.classList.remove("gallery-img-visible");
     }
   }
+
+  previusVisibleIndex.forEach((index) => {
+    if (event.id == "right-arrow-gallery") {
+      galleryList[index + 1].parentElement.classList.add("gallery-img-visible");
+    } else {
+      galleryList[index - 1].parentElement.classList.add("gallery-img-visible");
+    }
+  });
 
   /* Can now remove the existing selected img in gallery */
   selectedImg.classList.remove("gallery-selected");

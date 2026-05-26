@@ -509,6 +509,10 @@ section.section-size-lock {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.gallery-img-visible.gallery-img-none-fokus::after {
+  background-color: rgba(255, 255, 255, 0);
+}
+
 .gallery-left-arrow,
 .gallery-right-arrow {
   position: absolute;
