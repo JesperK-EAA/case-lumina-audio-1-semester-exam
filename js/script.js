@@ -92,3 +92,28 @@ function popupToggle(type) {
     popupDownload.classList.toggle("open");
   }
 }
+
+/* Gallery carousel */
+
+function carouselBtn(event) {
+  const selectedImg = document.querySelector(".gallery-selected");
+  const galleryList = document.querySelectorAll(".gallery-img");
+  let selectedIndex;
+
+  /* Looks for the element with most classes and find the selected img */
+  for (let index = 0; index < galleryList.length; index++) {
+    if (galleryList[index].classList.length > 1) {
+      selectedIndex = index;
+      break;
+    }
+  }
+
+  /* Can now remove the existing selected img in gallery */
+  selectedImg.classList.remove("gallery-selected");
+
+  if (event.id == "right-arrow-gallery") {
+    galleryList[selectedIndex + 1].classList.add("gallery-selected");
+  } else {
+    galleryList[selectedIndex - 1].classList.add("gallery-selected");
+  }
+}

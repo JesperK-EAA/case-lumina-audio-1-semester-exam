@@ -389,6 +389,7 @@ section.section-size-lock {
 
 .product-img-slected {
   width: 100%;
+  max-height: 310px;
 }
 
 .product-color-info {
@@ -492,16 +493,16 @@ section.section-size-lock {
   border-radius: var(--space-16);
 }
 
-.gallery-img.selected {
+.gallery-img.gallery-selected {
   width: 404px;
   height: 555px;
 }
 
-.gallery-img-wrapper {
+.gallery-img-none-fokus {
   position: relative;
 }
 
-.gallery-img-wrapper::after {
+.gallery-img-none-fokus::after {
   content: "";
   position: absolute;
   inset: 0;

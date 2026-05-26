@@ -404,13 +404,15 @@
         <h2>Stemninger skabt gennem musik</h2>
 
         <div class="gallery-carousel">
-          <img
-            class="gallery-left-arrow"
-            src="/img/icons/gallery-left-arrow.svg"
-            alt="button for left arrow"
-          />
+          <button id="left-arrow-gallery" type="button" onclick="carouselBtn(this)">
+            <img
+              class="gallery-left-arrow"
+              src="/img/icons/gallery-left-arrow.svg"
+              alt="button for left arrow"
+            />
+          </button>
 
-          <figure class="gallery-img-wrapper">
+          <figure class="gallery-img-none-fokus">
             <img
               class="gallery-img"
               src="/img/gallery/gallery-img-1.jpg"
@@ -428,7 +430,7 @@
 
           <figure>
             <img
-              class="gallery-img selected"
+              class="gallery-img gallery-selected"
               src="/img/gallery/gallery-img-3.jpg"
               alt="Lumina One on carpet outside to a picnic"
             />
@@ -442,7 +444,7 @@
             />
           </figure>
 
-          <figure class="gallery-img-wrapper">
+          <figure class="gallery-img-none-fokus">
             <img
               class="gallery-img"
               src="/img/gallery/gallery-img-5.jpg"
@@ -450,11 +452,13 @@
             />
           </figure>
 
-          <img
-            class="gallery-right-arrow"
-            src="/img/icons/gallery-right-arrow.svg"
-            alt="button for right arrow"
-          />
+          <button id="right-arrow-gallery" type="button" onclick="carouselBtn(this)">
+            <img
+              class="gallery-right-arrow"
+              src="/img/icons/gallery-right-arrow.svg"
+              alt="button for right arrow"
+            />
+          </button>
         </div>
       </section>
 
