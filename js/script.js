@@ -94,7 +94,8 @@ function popupToggle(type) {
 }
 
 /* Gallery carousel */
-let previusVisibleIndex = [];
+
+/* let previusVisibleIndex = [];
 
 function carouselBtn(event) {
   const selectedImg = document.querySelector(".gallery-selected");
@@ -102,7 +103,7 @@ function carouselBtn(event) {
   let selectedIndex;
   previusVisibleIndex = [];
 
-  /* Looks for the element with most classes and find the selected img */
+  //Looks for the element with most classes and find the selected img
   for (let index = 0; index < galleryList.length; index++) {
     if (galleryList[index].classList.length > 1) {
       selectedIndex = index;
@@ -124,12 +125,41 @@ function carouselBtn(event) {
     }
   });
 
-  /* Can now remove the existing selected img in gallery */
+  //Can now remove the existing selected img in gallery
   selectedImg.classList.remove("gallery-selected");
 
   if (event.id == "right-arrow-gallery") {
     galleryList[selectedIndex + 1].classList.add("gallery-selected");
   } else {
     galleryList[selectedIndex - 1].classList.add("gallery-selected");
+  }
+} */
+
+const imgList = [
+  "gallery-img-1.jpg",
+  "gallery-img-2.jpg",
+  "gallery-img-3.jpg",
+  "gallery-img-4.jpg",
+  "gallery-img-5.jpg",
+];
+
+const indexGallery = [0, 1, 2, 3, 4];
+
+function carouselBtn(event) {
+  const galleryList = document.querySelectorAll(".gallery-img");
+
+  console.log(indexGallery);
+  
+
+  if (event.id == "right-arrow-gallery") {
+    galleryList.forEach((el, index) => {
+      indexGallery[index]++;
+      
+      if (indexGallery[index] == 5) { 
+        indexGallery[index] = 0;
+      }
+
+      el.src = `img/gallery/${imgList[indexGallery[index]]}`;
+    });
   }
 }
