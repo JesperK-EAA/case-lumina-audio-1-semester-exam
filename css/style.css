@@ -422,10 +422,19 @@ section.section-size-lock {
   z-index: 0;
 }
 
+.product-color-info-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+}
+
 .product-color-info-buttons {
   display: flex;
   justify-content: center;
-  gap: var(--space-40);
+  align-items: center;
+  gap: var(--space-16);
 }
 
 .product-color-info-buttons button {
@@ -437,8 +446,8 @@ section.section-size-lock {
 }
 
 .product-color-info-buttons.selected button {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 #dusty-rose {
@@ -452,6 +461,11 @@ section.section-size-lock {
 }
 #lavender-mist {
   background-color: var(--col-lavender-mist);
+}
+
+.product-color-info-buttons .selected {
+  width: 100px;
+  height: 100px;
 }
 
 /* Gallery  ---------------------------------------------------------------------*/
