@@ -625,7 +625,7 @@ section.section-size-lock {
 
 .faq-question {
   background-color: var(--col-white-nuances);
-
+  cursor: pointer;
   border: 2px solid var(--col-black);
   border-radius: var(--space-8);
 
