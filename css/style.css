@@ -620,11 +620,12 @@ section.section-size-lock {
 .faq-question-title {
   display: flex;
   justify-content: space-between;
+  padding: var(--space-32) var(--space-24);
 }
 
 .faq-question {
   background-color: var(--col-white-nuances);
-  padding: var(--space-32) var(--space-24);
+
   border: 2px solid var(--col-black);
   border-radius: var(--space-8);
 
@@ -638,6 +639,8 @@ section.section-size-lock {
 }
 
 .faq-question-info {
+  padding-inline: var(--space-24);
+  padding-bottom: var(--space-32);
   display: none;
 }
 
