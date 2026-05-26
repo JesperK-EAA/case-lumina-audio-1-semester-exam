@@ -14,3 +14,20 @@ function faqDropdown(event) {
     arrowIcon.src = "img/icons/open-arrow.svg";
   }
 }
+
+
+/* Toggle popups with overlay*/
+
+const popupBuy = document.getElementById("buy-popup");
+const popupDownload = document.getElementById("download-popup");
+const popupOverlay = document.getElementById("overlay");
+
+function popupToggle(type) {
+  popupOverlay.classList.toggle('open')
+  
+  if (type == "buy") {
+    popupBuy.classList.toggle("open");
+  } else {
+    popupDownload.classList.toggle("open");
+  }
+}

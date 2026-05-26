@@ -647,3 +647,49 @@ section.section-size-lock {
 .faq-question-info.open {
   display: block;
 }
+
+
+/* Popup  ---------------------------------------------------------------------*/
+
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  
+  border-radius: var(--space-8);
+  background-color: var(--col-white-nuances);
+  flex-direction: column;
+  align-items: center;
+  width: 624px;
+
+  padding: var(--space-80) 0;
+  gap: var(--space-16);
+  text-align: center;
+}
+
+.popup button {
+  width: fit-content;
+}
+
+.popup.open {
+  display: flex;
+}
+
+#overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9;
+  display: none;
+}
+
+#overlay.open {
+  display: block;
+}
+

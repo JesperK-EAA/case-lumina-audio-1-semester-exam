@@ -39,7 +39,9 @@
           </div>
 
           <div class="hero-cta">
-            <button class="btn">Gøre hvert øjeblik levende</button>
+            <button onclick="popupToggle('buy')" class="btn">
+              Gøre hvert øjeblik levende
+            </button>
             <p class="hero-cta-price">1440,-</p>
           </div>
         </div>
@@ -286,7 +288,9 @@
               gennem appen og skab en playlist alle kan være en del af.
             </p>
           </div>
-          <button class="btn">Join fælleskabet nu</button>
+          <button type="button" onclick="popupToggle()" class="btn">
+            Join fælleskabet nu
+          </button>
         </article>
 
         <figure>
@@ -586,7 +590,9 @@
             </p>
           </div>
 
-          <button class="btn">Klar til at skabe minder</button>
+          <button onclick="popupToggle('buy')" class="btn">
+            Klar til at skabe minder
+          </button>
         </article>
       </section>
 
@@ -651,6 +657,24 @@
           </article>
         </div>
       </section>
+
+      <div id="buy-popup" class="popup">
+        <h2>Køb at produkt</h2>
+        <p>Føre dig derefter vider til indkøb</p>
+        <button type="button" onclick="popupToggle('buy')" class="btn">
+          Luk popup
+        </button>
+      </div>
+
+      <div id="download-popup" class="popup">
+        <h2>installation af appen</h2>
+        <p>Ført dig vider til en app store hvor appen er kan downloades</p>
+        <button type="button" onclick="popupToggle()" class="btn">
+          Luk popup
+        </button>
+      </div>
+
+      <div id="overlay"></div>
     </main>
 
     <footer>
