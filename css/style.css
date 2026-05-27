@@ -368,7 +368,7 @@ section.section-size-lock {
   width: 405px;
 }
 
-/* product color  ---------------------------------------------------------------------*/
+/* Product color  ---------------------------------------------------------------------*/
 
 .product-color {
   background-color: var(--col-white-nuances);
@@ -405,7 +405,7 @@ section.section-size-lock {
   border-radius: var(--space-8);
 }
 
-.product-color-img.selected-img {
+.product-img-color.selected-img {
   border-width: 4px;
 }
 

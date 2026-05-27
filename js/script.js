@@ -1,6 +1,6 @@
 "use strict";
 
-/* Get product data form json file */
+//Fetching my product data form a json file
 let productData = [];
 
 async function fetchProductData() {
@@ -11,7 +11,7 @@ async function fetchProductData() {
 
 fetchProductData();
 
-/* Product color and img changer */
+//Elements in my product color section that need to change info depending of the selected color and main img
 const mainImg = document.getElementById("main-img");
 const colorTitle = document.getElementById("color-title");
 const colorDesc = document.getElementById("color-desc");
@@ -21,11 +21,9 @@ const rightImg = document.getElementById("img-right");
 const backgroundTop = document.getElementById("product-color-bg-top");
 const backgroundBottom = document.getElementById("product-color-bg-bottom");
 
-const allColorBtn = document.querySelector(".color-change-btn");
-
-function productColorChange(event, color) {
+function productColorChange(element, color) {
   document.querySelector(".selected-color").classList.remove("selected-color");
-  event.classList.add("selected-color");
+  element.classList.add("selected-color");
 
   let selectedImg = document.querySelector(".selected-img").src;
   let imgDirection = "";
@@ -40,21 +38,24 @@ function productColorChange(event, color) {
         imgDirection = pro.deafultImg;
       }
 
+      //Changes all values of the product img and text
       mainImg.src = `img/product/${pro.imgFolder}/${imgDirection}`;
-      colorTitle.innerHTML = pro.productColor;
-      colorDesc.innerHTML = pro.colorDesc;
+      colorTitle.innerText = pro.productColor;
+      colorDesc.innerText = pro.colorDesc;
       deafultImg.src = `img/product/${pro.imgFolder}/${pro.deafultImg}`;
       leftImg.src = `img/product/${pro.imgFolder}/${pro.leftImg}`;
       rightImg.src = `img/product/${pro.imgFolder}/${pro.rightImg}`;
 
+      //Changes the background svg img to the current selected color
       backgroundTop.src = `img/background/backgorund-designs/${pro.backgroundTop}`;
       backgroundBottom.src = `img/background/backgorund-designs/${pro.backgroundBottom}`;
     }
   });
 }
 
-function productImgChange(event) {
-  const imgChild = event.children[0];
+//Helps show the current slected img of the product
+function productImgChange(element) {
+  const imgChild = element.children[0];
 
   document.querySelector(".selected-img").classList.remove("selected-img");
   imgChild.classList.add("selected-img");
@@ -62,12 +63,11 @@ function productImgChange(event) {
   mainImg.src = imgChild.src;
 }
 
-/* Faq open and losing of faq cards */
+//Faq open and closing of faq cards
+function faqDropdown(element) {
+  let arrowIcon = element.querySelector("img");
 
-function faqDropdown(event) {
-  let arrowIcon = event.querySelector("img");
-
-  const faqCard = event.querySelector(".faq-question-info");
+  const faqCard = element.querySelector(".faq-question-info");
   faqCard.classList.toggle("open");
 
   if (arrowIcon.src.includes("open-arrow.svg")) {
@@ -77,8 +77,7 @@ function faqDropdown(event) {
   }
 }
 
-/* Toggle popups with overlay*/
-
+//Toggle of popups with overlay under
 const popupBuy = document.getElementById("buy-popup");
 const popupDownload = document.getElementById("download-popup");
 const popupOverlay = document.getElementById("overlay");
@@ -93,7 +92,7 @@ function popupToggle(type) {
   }
 }
 
-/* Gallery carousel */
+//Complicated Gallery carousel (FAILED)
 
 /* let previusVisibleIndex = [];
 
@@ -135,6 +134,7 @@ function carouselBtn(event) {
   }
 } */
 
+//A simpler way for makign a carousel with change to only the src file
 const imgList = [
   "gallery-img-1.jpg",
   "gallery-img-2.jpg",
@@ -145,21 +145,21 @@ const imgList = [
 
 const indexGallery = [0, 1, 2, 3, 4];
 
-function carouselBtn(event) {
+function carouselBtn(element) {
   const galleryList = document.querySelectorAll(".gallery-img");
 
-  console.log(indexGallery);
-  
-
-  if (event.id == "right-arrow-gallery") {
-    galleryList.forEach((el, index) => {
+  galleryList.forEach((img, index) => {
+    if (element.id == "right-arrow-gallery") {
       indexGallery[index]++;
-      
-      if (indexGallery[index] == 5) { 
-        indexGallery[index] = 0;
-      }
+    } else {
+      indexGallery[index]--;
+    }
 
-      el.src = `img/gallery/${imgList[indexGallery[index]]}`;
-    });
-  }
+    if (indexGallery[index] == 5) {
+      indexGallery[index] = 0;
+    } else if (indexGallery[index] == -1) {
+      indexGallery[index] = 4;
+    }
+      img.src = `img/gallery/${imgList[indexGallery[index]]}`;
+  });
 }
