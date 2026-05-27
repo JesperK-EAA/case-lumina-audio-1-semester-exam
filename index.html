@@ -39,7 +39,7 @@
           </div>
 
           <div class="hero-cta">
-            <button onclick="popupToggle('buy')" class="btn">
+            <button type="button" onclick="popupToggle('buy')" class="btn">
               Gøre hvert øjeblik levende
             </button>
             <p class="hero-cta-price">1440,-</p>
@@ -50,53 +50,53 @@
       <section class="benefit section-size-lock">
         <h2 class="benefit-title">Fordele der gør en forskel</h2>
 
-        <div class="benefit-content">
-          <article class="benefit-content-box">
+        <div class="benefit-content-container">
+          <article class="benefit-content">
             <img
-              class="benefit-content-box-icon"
+              class="benefit-content-icon"
               src="img/icons/battery-charging-full.svg"
               alt="Icon for battery"
             />
-            <h3 class="benefit-content-box-title">Batteri til hele dagen</h3>
+            <h3 class="benefit-content-title">Batteri til hele dagen</h3>
             <p>
               Op til 18 timers batteritid giver frihed til musik hele dagen. Fra
               yoga og picnic til lange aftener med veninderne.
             </p>
           </article>
 
-          <article class="benefit-content-box">
+          <article class="benefit-content">
             <img
-              class="benefit-content-box-icon"
+              class="benefit-content-icon"
               src="img/icons/community.svg"
               alt="Icon for community"
             />
-            <h3 class="benefit-content-box-title">Musik som et fællesskab</h3>
+            <h3 class="benefit-content-title">Musik som et fællesskab</h3>
             <p>
               Lad alle være med til at styre musikken gennem appen. Tilføj
               sange, del stemningen og skab playlists sammen med veninderne.
             </p>
           </article>
 
-          <article class="benefit-content-box">
+          <article class="benefit-content">
             <img
-              class="benefit-content-box-icon"
+              class="benefit-content-icon"
               src="img/icons/weight.svg"
               alt="Icon for weight"
             />
-            <h3 class="benefit-content-box-title">Let at tage med overalt</h3>
+            <h3 class="benefit-content-title">Let at tage med overalt</h3>
             <p>
               Et let og kompakt design skabt til livet på farten Fra stranden
               til veninderne er den nem at tage med uden at føles tung.
             </p>
           </article>
 
-          <article class="benefit-content-box">
+          <article class="benefit-content">
             <img
-              class="benefit-content-box-icon"
+              class="benefit-content-icon"
               src="img/icons/design.svg"
               alt="Icon for design"
             />
-            <h3 class="benefit-content-box-title">Design uden kompromiser</h3>
+            <h3 class="benefit-content-title">Design uden kompromiser</h3>
             <p>
               Et stilrent design hvor funktion og æstetik mødes. Alle funktioner
               er integreret i et rent og moderne udtryk uden unødvendige
@@ -109,9 +109,9 @@
       <section class="product-use section-size-lock">
         <h2 class="product-use-title">Perfekt til alle øjeblikke</h2>
 
-        <article class="product-use-box">
-          <div class="product-use-box-info">
-            <h3 class="product-use-box-info-title">
+        <article class="product-use-container">
+          <div class="product-use-info">
+            <h3 class="product-use-info-title">
               Musik til de rolige øjeblikke
             </h3>
             <p>
@@ -122,26 +122,26 @@
             </p>
           </div>
 
-          <figure class="product-use-box-figure">
+          <figure class="product-use-figure">
             <img
-              class="product-use-box-img"
+              class="product-use-img"
               src="img/use-of-product/picnic.png"
               alt="Woman on the grass with a picnic enoying her day with LUMINA One speaker"
             />
           </figure>
         </article>
 
-        <article class="product-use-box">
-          <figure class="product-use-box-figure">
+        <article class="product-use-container">
+          <figure class="product-use-figure">
             <img
-              class="product-use-box-img"
+              class="product-use-img"
               src="img/use-of-product/party.png"
               alt="A group of young people partying with LUMINA One speaker"
             />
           </figure>
 
-          <div class="product-use-box-info">
-            <h3 class="product-use-box-info-title">Skru op for stemningen</h3>
+          <div class="product-use-info">
+            <h3 class="product-use-info-title">Skru op for stemningen</h3>
             <p>
               Fra små sammenkomster til sene sommeraftener leverer højtaleren
               kraftfuld lyd der samler mennesker. Lad vennerne tilføje deres
@@ -152,9 +152,9 @@
           </div>
         </article>
 
-        <article class="product-use-box">
-          <div class="product-use-box-info">
-            <h3 class="product-use-box-info-title">Balance i hvert beat</h3>
+        <article class="product-use-container">
+          <div class="product-use-info">
+            <h3 class="product-use-info-title">Balance i hvert beat</h3>
             <p>
               Skab en rolig atmosfære med klar og behagelig lyd til yoga,
               meditation eller afslapning. Det minimalistiske design passer
@@ -163,9 +163,9 @@
             </p>
           </div>
 
-          <figure class="product-use-box-figure">
+          <figure class="product-use-figure">
             <img
-              class="product-use-box-img"
+              class="product-use-img"
               src="img/use-of-product/yoga.png"
               alt="Woman does yoga on the floor with LUMINA One speaker"
             />
@@ -280,10 +280,10 @@
       </section>
 
       <section class="mobile-app section-size-lock">
-        <article class="mobile-app-contianer">
-          <div class="mobile-app-container-info">
-            <h2 class="mobile-app-title">Musik alle kan være en del af</h2>
-            <p class="mobile-app-container-info-desc">
+        <div class="mobile-app-contianer">
+          <div class="mobile-app-info">
+            <h2 class="mobile-app-info-title">Musik alle kan være en del af</h2>
+            <p class="mobile-app-info-desc">
               Giv vennerne mulighed for at tilføje deres yndlingssange direkte
               gennem appen og skab en playlist alle kan være en del af.
             </p>
@@ -291,7 +291,7 @@
           <button type="button" onclick="popupToggle()" class="btn">
             Join fælleskabet nu
           </button>
-        </article>
+        </div>
 
         <figure>
           <img
@@ -315,7 +315,7 @@
               <button type="button" onclick="productImgChange(this)">
                 <img
                   id="img-deafult"
-                  class="product-color-img selected-img"
+                  class="product-img-color selected-img"
                   src="img/product/dusty-rose/dusty-rose-deafult.png"
                   alt="img of the front of the product"
                 />
@@ -323,7 +323,7 @@
               <button type="button" onclick="productImgChange(this)">
                 <img
                   id="img-right"
-                  class="product-color-img"
+                  class="product-img-color"
                   src="img/product/dusty-rose/dusty-rose-right.png"
                   alt="img from the right side of the product"
                 />
@@ -331,7 +331,7 @@
               <button type="button" onclick="productImgChange(this)">
                 <img
                   id="img-left"
-                  class="product-color-img"
+                  class="product-img-color"
                   src="img/product/dusty-rose/dusty-rose-left.png"
                   alt="img from the left side of the product"
                 />
@@ -341,7 +341,7 @@
             <figure>
               <img
                 id="main-img"
-                class="product-img-slected"
+                class="product-img-selected"
                 src="img/product/dusty-rose/dusty-rose-deafult.png"
                 alt="Main img that will be focused on"
               />
@@ -360,29 +360,30 @@
               </p>
             </div>
 
-            <div class="product-color-info-buttons">
-              <div class="product-color-info-buttons-container">
+            <div class="product-color-info-buttons-container">
+              <div class="product-color-info-button">
                 <button
                   onclick="productColorChange(this, 'Dusty Rose')"
                   id="dusty-rose"
                   class="color-change-btn selected-color"
                 ></button>
               </div>
-              <div class="product-color-info-buttons-container">
+              
+              <div class="product-color-info-button">
                 <button
                   onclick="productColorChange(this, 'Cream Linen')"
                   id="cream-linen"
                   class="color-change-btn"
                 ></button>
               </div>
-              <div class="product-color-info-buttons-container">
+              <div class="product-color-info-button">
                 <button
                   onclick="productColorChange(this, 'Sage Green')"
                   id="sage-green"
                   class="color-change-btn"
                 ></button>
               </div>
-              <div class="product-color-info-buttons-container">
+              <div class="product-color-info-button">
                 <button
                   onclick="productColorChange(this, 'Lavender Mist')"
                   id="lavender-mist"
@@ -411,41 +412,39 @@
           >
             <img
               class="gallery-left-arrow"
-              src="/img/icons/gallery-left-arrow.svg"
+              src="img/icons/gallery-left-arrow.svg"
               alt="button for left arrow"
             />
           </button>
 
-     
-
           <figure class="gallery-img-none-fokus">
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-img-1.jpg"
+              src="img/gallery/gallery-img-1.jpg"
               alt="Lumina One on a coffe table in a white room"
             />
           </figure>
 
-          <figure class="gallery-img-visible gallery-img-none-fokus">
+          <figure class="gallery-img-none-fokus gallery-img-visible ">
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-img-2.jpg"
+              src="img/gallery/gallery-img-2.jpg"
               alt="Lumina One on a table with people drinking relaxing on a late evening"
             />
           </figure>
 
-          <figure class="gallery-img-visible gallery-img-none-fokus">
+          <figure class="gallery-img-none-fokus gallery-img-visible ">
             <img
               class="gallery-img gallery-selected"
-              src="/img/gallery/gallery-img-3.jpg"
+              src="img/gallery/gallery-img-3.jpg"
               alt="Lumina One on carpet outside to a picnic"
             />
           </figure>
 
-          <figure class="gallery-img-visible gallery-img-none-fokus">
+          <figure class="gallery-img-none-fokus gallery-img-visible ">
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-img-4.jpg"
+              src="img/gallery/gallery-img-4.jpg"
               alt="Lumina One on a coffe table in a brown room"
             />
           </figure>
@@ -453,11 +452,10 @@
           <figure class="gallery-img-none-fokus">
             <img
               class="gallery-img"
-              src="/img/gallery/gallery-img-5.jpg"
+              src="img/gallery/gallery-img-5.jpg"
               alt="Lumina One on a table with people drinking relaxing on a late evening"
             />
           </figure>
-
 
           <button
             id="right-arrow-gallery"
@@ -466,7 +464,7 @@
           >
             <img
               class="gallery-right-arrow"
-              src="/img/icons/gallery-right-arrow.svg"
+              src="img/icons/gallery-right-arrow.svg"
               alt="button for right arrow"
             />
           </button>
@@ -647,6 +645,7 @@
 
       <section class="faq section-size-lock">
         <h2>FAQ</h2>
+      
         <div class="faq-container">
           <article class="faq-question" onclick="faqDropdown(this)">
             <div class="faq-question-title">
