@@ -137,7 +137,6 @@ section.section-size-lock {
   color: var(--col-white);
   padding: var(--space-80);
   padding-top: var(--space-40);
-  padding-bottom: var(--space-160);
 }
 
 .hero-logo {
@@ -208,6 +207,7 @@ section.section-size-lock {
 
 .benefit {
   margin: var(--space-160) 0px;
+  margin-bottom: 320px;
   padding-inline: var(--space-40);
 }
 
