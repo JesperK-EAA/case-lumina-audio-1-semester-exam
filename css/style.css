@@ -288,52 +288,57 @@ header img {
 
 /* Product funktions ---------------------------------------------------------------------*/
 
-.product {
+.product-fnc-fnc {
   margin: var(--space-160) 0px;
   padding-inline: var(--space-40);
 }
 
-.product-title {
+.product-fnc-title {
   text-align: center;
   font-size: var(--font-size-3xl);
   margin-bottom: var(--space-40);
 }
 
 /* Helps place the cards and main img in a correct layout */
-.product-container {
+.product-fnc-container {
   display: flex;
   align-items: center;
 }
 
-.product-container-functions {
+.product-fnc-container-functions {
   display: flex;
   flex-direction: column;
   gap: var(--space-32);
 }
 
-.product-image {
+.product-fnc-image {
   width: 100%;
 }
 
 /* For eviduel card design/layout */
-.product-card {
+.product-fnc-card {
   padding: var(--space-16);
   border: 2px solid var(--col-black-nuances);
   border-radius: var(--space-16);
   width: 404px;
 }
 
-.product-card-info {
+.product-fnc-card-info {
   display: flex;
   gap: var(--space-16);
   margin-bottom: var(--space-16);
+  align-items: center;
 }
 
-.product-card-info-icon {
+.product-fnc-card-info h3 {
+  font-size: var(--font-size-md);
+}
+
+.product-fnc-card-info-icon {
   width: 32px;
 }
 
-.product-card-info-title {
+.product-fnc-card-info-title {
   font-size: var(--font-size-lg);
 }
 
@@ -525,7 +530,6 @@ header img {
   width: 404px;
   height: 555px;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.7);
-
 }
 
 /* Blurry and fix blurre */
