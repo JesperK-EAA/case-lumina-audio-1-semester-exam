@@ -1,48 +1,80 @@
 # LUMINA Audio
-###### Hvad er formålet med projektet?
 Lumina audio er en landing page som er en af projekt opgaver vi har arbejdet igennem første semester og jeg har så valgt projektet for at forbedre den med alt det jeg har lært igennem første semeste.
 
-###### Hvilke teknologier har du brugt?
-Jeg har brugt VSC som min kode editer og git for gemme koden op.
+Til projektet har jeg brugt VSC som min kode editer og github for gemningen af min kode og websom webhosteren.
 
-###### Hvad kan brugeren gøre på siden?
-Projektet er en landing page så den har derfor allerede limited interaktioner.
-* Buttons onlcik for at hvis en popup istedet for redirection.
+I gennem projektet kan bruge gøre disse interaktioner gennem landing pagen.
+* Buttons onclick for at hvis en popup istedet for redirection.
 * Projekt farverne af produktet kan ændres til 4 forskellige farver sammen med ændring af billedets vinkel.
 * Man kan klikke igennem et galleri med billeder af produktet.
 
-###### Hvilken type data arbejder projektet med?
+Gennem projektet kan jeg se at jeg bruger disse datatyper 
 * Sting
 * Array
 * Object
 
 
 ## Fil- og mappestruktur
-Så vi kan starte med min index.html fil, hvor den indholder symantiske elementer som sections, artikle, osv. hvor hvert sektion er splittet op i en sektion element og bruger onclick for at få funktioner til at blive kaldt fra js siden af  
 
-Jeg har også valgt at lave folders til både CSS og JS men siden der kun er en fil i hver af dem at folderen kunne godt blive fjernet men jeg er vant til at have det samme i folders det samme skulle også gå for pages hvis jeg havde flere mens index skal aldtid være i starten af root folderen
+### Root files
+Så vi kan starte med de filer der er ude i roo folderen der har jeg min index.html hvis jeg havde andre sider jeg skull redirect til ville de filer være i sin egen folder som kunne være kaldt pages. Den anden fil er min json fil der indholder data af mit produkt som indholder tekst, farver og src path. De bliver brugt inde i sectionen hvor en bruger kan vælge produktets farver men også vinklen af produktet.  
 
-Så har jeg img folder hvor jeg har prøvet at lave så mange folders og smide dem ind i hinandne så der ikke ligger 10+ iconer i en folder men måske 4 i hver folder inde i dem som fx i min icons folder var jeg nød til at lave flere for få et bedre overblik over hvad var pile, funktion iconer og for testimonial
+Inde i min index.html fil er den lavet så semanisk som den kan blive med brug af af semantiske elementer som article, figure, header osv som hjælper med SEO (Search Engine Optimization) noget som også er connected med min css fil er hvordan jeg har skreve class med at gøre at den forsætter med at bygge på sig selv som fx linje 21 med hero section hvor den går fra hero -> hero-content -> hero-content-about jeg syndes selv det hjælper mere med at få et overblik men den ene ting jeg var nød til at prøve passe på er længden af classen
 
-![This is an alt text.](img/readme-images/folder-structure.png "HTML validated")
+Ellers havde jeg også tænkt at bruge utility class som er det bootstrap og tailwind bruger for css hvor en class har en specifik opgave såsom at lave et element kun flex eller gøre en font større fx
+```
+//CSS
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
+.font-lg {
+  font-size: 2.4rem;
+}
+
+
+//HTML
+
+<div class="flex-col gap-16">
+  <h1 class="font-lg">Title</h1>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+</div>
+```
+Men jeg syndes at ville blive en smule for meget for nu og holdte mig til at lave de class'er jeg har nu lavet.
+    
+### Mappestruktur
+Jeg har også valgt at lave folders til både CSS og JS men siden der kun er en fil i hver af dem, kunne det godt have blive fjernet men jeg kan godt lige at have folders, hvis man skulle tilføje en extra fil for en af dem.
+
+Så har jeg en img folder, hvor jeg har prøvet at lave så mange folders som mullight så der ikke ligger 10+ iconer i en folder alene såsom ikonerne var på et tidspunkt. Men med at have flere folders og opdel alt i mindre bider har hjulpet mig med at kunne få et bedre overblik af projektets filer/folder. 
+
+![Folder structure.](img/readme-images/folder-structure.png "HTML validated")
 
 
 ## Validering af HTML, CSS og JS
-Som der kan ses er alle tre af mine filer valideret uden nogen ødeliggende fejl
+Som der kan ses er alle tre af mine filer valideret uden at nogen af dem fejlede 
 
-![This is an alt text.](img/readme-images/html-validated.png "HTML validated")
+### Validering af HTML
+![HTML validated.](img/readme-images/html-validated.png)
 
-![This is an alt text.](img/readme-images/css-validated.png "CSS validated")
+### Validering af CSS 
+![CSS validated.](img/readme-images/css-validated.png)
 
-![This is an alt text.](img/readme-images/css-validated.png "JS validated")
+### Validering af JS
+![JS validated.](img/readme-images/js-validated.png)
 
 
 ## JavaScript datastruktur
 Så for mit data struktur hvor jeg har mit json fil for mit produkt hvor jeg har et array af objecs som indholder strings som deres type siden jeg bruger stringen til at hjælpe find det korrekte billed der bliver valgt sammen med farven
 
-![This is an alt text.](img/readme-images/data-structure.png "HTML validated")
+![Json object.](img/readme-images/data-structure.png)
 
 ## JS Eksempel 
-Så her har jeg et billed af min js kode denne del er for galleriet hvor man kan vælge at gå til næste eller forrige billed hvor den fungere med at udskifte src af billederne 
+Så her har jeg et billed af min JS kode, hvor denne del er for galleriet, hvor man kan vælge at gå til næste eller forrige billed hvor den fungere med at udskifte src af billederne. 
 
-![This is an alt text.](img/readme-images/js-explained.png "HTML validated")
+![JS examble.](img/readme-images/js-explained.png)
