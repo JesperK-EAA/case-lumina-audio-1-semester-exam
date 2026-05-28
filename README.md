@@ -70,7 +70,7 @@ Som der kan ses er alle tre af mine filer valideret uden at nogen af dem fejlede
 
 
 ## JavaScript datastruktur
-Så for mit data struktur hvor jeg har mit json fil for mit produkt hvor jeg har et array af objecs som indholder strings som deres type siden jeg bruger stringen til at hjælpe find det korrekte billed der bliver valgt sammen med farven
+Min data struktur er hvor jeg har min JSON fil for produktet hvor den indholder et array of objects som indholder mono strings som deres type siden jeg bruger dem til at hjælpe mig med at finde den korrkte frave og billeder der skal blive vist ud fra den udvalgte farve af knapperne
 
 ![Json object.](img/readme-images/data-structure.png)
 
