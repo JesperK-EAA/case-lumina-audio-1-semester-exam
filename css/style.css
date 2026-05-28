@@ -404,6 +404,10 @@ header img {
   gap: var(--space-16);
 }
 
+.product-img-selecter img {
+  background-color: var(--col-white-nuances);
+}
+
 .product-img-color {
   width: 150px;
   height: 150px;
