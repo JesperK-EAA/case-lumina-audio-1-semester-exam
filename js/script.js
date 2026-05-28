@@ -22,6 +22,7 @@ const backgroundTop = document.getElementById("product-color-bg-top");
 const backgroundBottom = document.getElementById("product-color-bg-bottom");
 
 function productColorChange(element, color) {
+  
   document.querySelector(".selected-color").classList.remove("selected-color");
   element.classList.add("selected-color");
 
@@ -39,16 +40,16 @@ function productColorChange(element, color) {
       }
 
       //Changes all values of the product img and text
-      mainImg.src = `img/product/${pro.imgFolder}/${imgDirection}`;
+      mainImg.src = `img/products/${pro.imgFolder}/${imgDirection}`;
       colorTitle.innerText = pro.productColor;
       colorDesc.innerText = pro.colorDesc;
-      deafultImg.src = `img/product/${pro.imgFolder}/${pro.deafultImg}`;
-      leftImg.src = `img/product/${pro.imgFolder}/${pro.leftImg}`;
-      rightImg.src = `img/product/${pro.imgFolder}/${pro.rightImg}`;
+      deafultImg.src = `img/products/${pro.imgFolder}/${pro.deafultImg}`;
+      leftImg.src = `img/products/${pro.imgFolder}/${pro.leftImg}`;
+      rightImg.src = `img/products/${pro.imgFolder}/${pro.rightImg}`;
 
       //Changes the background svg img to the current selected color
-      backgroundTop.src = `img/background/backgorund-designs/${pro.backgroundTop}`;
-      backgroundBottom.src = `img/background/backgorund-designs/${pro.backgroundBottom}`;
+      backgroundTop.src = `img/backgrounds/backgorund-designs/${pro.backgroundTop}`;
+      backgroundBottom.src = `img/backgrounds/backgorund-designs/${pro.backgroundBottom}`;
     }
   });
 }
@@ -71,9 +72,9 @@ function faqDropdown(element) {
   faqCard.classList.toggle("open");
 
   if (arrowIcon.src.includes("open-arrow.svg")) {
-    arrowIcon.src = "img/icons/closed-arrow.svg";
+    arrowIcon.src = "img/icons/arrows/closed-arrow.svg";
   } else {
-    arrowIcon.src = "img/icons/open-arrow.svg";
+    arrowIcon.src = "img/icons/arrows/open-arrow.svg";
   }
 }
 
@@ -160,6 +161,6 @@ function carouselBtn(element) {
     } else if (indexGallery[index] == -1) {
       indexGallery[index] = 4;
     }
-      img.src = `img/gallery/${imgList[indexGallery[index]]}`;
+      img.src = `img/galleries/${imgList[indexGallery[index]]}`;
   });
 }
