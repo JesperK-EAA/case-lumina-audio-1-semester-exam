@@ -27,6 +27,8 @@
   --space-80: 80px;
   --space-120: 120px;
   --space-160: 160px;
+  --space-180: 180px;
+  --space-240: 240px;
 
   /* Colors */
   --col-white: #fff4f0;
@@ -143,7 +145,7 @@ header img {
   background-size: cover;
   color: var(--col-white);
   padding: var(--space-80);
-  padding-top: 180px;
+  padding-top: var(--space-180);
 }
 
 /* The combine of all info EXCEPT logo */
@@ -208,7 +210,7 @@ header img {
 
 .benefit {
   margin: var(--space-160) 0px;
-  margin-bottom: 320px;
+  margin-bottom: 200px;
   padding-inline: var(--space-40);
 }
 
@@ -519,7 +521,7 @@ header img {
   justify-content: center;
   gap: var(--space-32);
   overflow: hidden;
-  padding-bottom: var(--space-160);
+  padding-bottom: var(--space-80);
   padding-top: var(--space-40);
 }
 
@@ -571,7 +573,8 @@ header img {
 /* Testimonial  ---------------------------------------------------------------------*/
 
 .testimonial {
-  margin: var(--space-120) 0;
+  margin-top: var(--space-120);
+  margin-bottom: var(--space-240);
   padding-inline: var(--space-40);
 }
 
@@ -666,7 +669,7 @@ header img {
 
 .faq h2 {
   text-align: center;
-  margin-bottom: var(--space-40);
+  margin-bottom: var(--space-80);
 }
 
 .faq-container {
