@@ -68,7 +68,7 @@ function productImgChange(element) {
 function faqDropdown(element) {
   let arrowIcon = element.querySelector("img");
 
-  const faqCard = element.querySelector(".faq-question-info");
+  const faqCard = (element.parentNode).querySelector(".faq-question-info");
   faqCard.classList.toggle("open");
 
   if (arrowIcon.src.includes("open-arrow.svg")) {
