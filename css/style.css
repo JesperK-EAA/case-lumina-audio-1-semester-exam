@@ -89,7 +89,7 @@ footer div {
   justify-content: space-between;
   align-items: center;
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 footer p {
@@ -106,7 +106,7 @@ button {
 
 section.section-size-lock {
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 .btn {
@@ -151,7 +151,7 @@ header img {
 /* The combine of all info EXCEPT logo */
 .hero-content {
   margin-inline: auto;
-  max-width: 1440px;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   gap: var(--space-40);
@@ -388,7 +388,7 @@ header img {
 
 .product-color-container {
   display: flex;
-  max-width: 1440px;
+  max-width: 1280px;
   margin-inline: auto;
 }
 
@@ -584,7 +584,7 @@ header img {
 
 .testimonial-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 405px);
+  grid-template-columns: repeat(auto-fit, 355px);
   grid-auto-rows: 1fr;
   place-items: center;
   justify-content: center;
