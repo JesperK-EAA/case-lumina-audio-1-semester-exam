@@ -511,7 +511,7 @@ header img {
 }
 
 .gallery h2 {
-  margin-bottom: var(--space-80);
+  margin-bottom: var(--space-40);
 }
 
 .gallery-carousel {
@@ -521,8 +521,7 @@ header img {
   justify-content: center;
   gap: var(--space-32);
   overflow: hidden;
-  padding-bottom: var(--space-80);
-  padding-top: var(--space-40);
+  padding: var(--space-80);
 }
 
 /* Generally images and the selected one */
@@ -557,8 +556,8 @@ header img {
 .gallery-left-arrow,
 .gallery-right-arrow {
   position: absolute;
-  top: 40%;
-  transform: translate(0, -40%);
+  top: 50%;
+  transform: translate(0, -50%);
   z-index: 2;
 }
 
@@ -682,7 +681,7 @@ header img {
 
 .faq-question {
   background-color: var(--col-white-nuances);
- 
+
   border: 2px solid var(--col-black-nuances);
   border-radius: var(--space-8);
 
