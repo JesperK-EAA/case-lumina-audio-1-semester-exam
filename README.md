@@ -1,14 +1,14 @@
 # LUMINA Audio
 Lumina audio er en landing page som er en af projekt opgaver vi har arbejdet igennem første semester og jeg har så valgt projektet for at forbedre den med alt det jeg har lært igennem første semeste.
 
-Til projektet har jeg brugt VSC som min kode editer og github for gemningen af min kode og websom webhosteren.
+Til projektet har jeg brugt VSC som min kode editer og github for gemningen af min kode og webhosting.
 
 I gennem projektet kan bruge gøre disse interaktioner gennem landing pagen.
 * Buttons onclick for at hvis en popup istedet for redirection.
 * Projekt farverne af produktet kan ændres til 4 forskellige farver sammen med ændring af billedets vinkel.
 * Man kan klikke igennem et galleri med billeder af produktet.
 
-Gennem projektet kan jeg se at jeg bruger disse datatyper 
+Gennem projektet bruger jeg disse datatyper 
 * Sting
 * Array
 * Object
@@ -17,11 +17,11 @@ Gennem projektet kan jeg se at jeg bruger disse datatyper
 ## Fil- og mappestruktur
 
 ### Root files
-Så vi kan starte med de filer der er ude i roo folderen der har jeg min index.html hvis jeg havde andre sider jeg skull redirect til ville de filer være i sin egen folder som kunne være kaldt pages. Den anden fil er min json fil der indholder data af mit produkt som indholder tekst, farver og src path. De bliver brugt inde i sectionen hvor en bruger kan vælge produktets farver men også vinklen af produktet.  
+Så vi kan starte med de filer der er ude i roo folderen der har jeg min index.html hvis jeg havde andre sider jeg skull redirect til ville de filer være i sin egen folder som kunne være kaldt pages. Den anden fil er min json fil der indholder data af mit produkt som indholder tekst, farver og src path. De bliver brugt inde i sectionen, hvor en bruger kan vælge produktets farver men også vinklen af produktet.  
 
-Inde i min index.html fil er den lavet så semanisk som den kan blive med brug af af semantiske elementer som article, figure, header osv som hjælper med SEO (Search Engine Optimization) noget som også er connected med min css fil er hvordan jeg har skreve class med at gøre at den forsætter med at bygge på sig selv som fx linje 21 med hero section hvor den går fra hero -> hero-content -> hero-content-about jeg syndes selv det hjælper mere med at få et overblik men den ene ting jeg var nød til at prøve passe på er længden af classen
+Inde i min index.html fil er den lavet så semanisk, som den kan blive med brug af semantiske elementer såsom article, figure, header osv, som hjælper med SEO (Search Engine Optimization). Noget som også er connected med min css fil er hvordan jeg har skreve class med at gøre at de forsætter med at bygge på sig selv som fx linje 32 med hero section hvor den går fra hero -> hero-content -> hero-content-about jeg syndes selv at det hjælper mere med at få et overblik, men den ene ting jeg var nød til at prøve passe på var længden af class inde i html.
 
-Ellers havde jeg også tænkt at bruge utility class som er det bootstrap og tailwind bruger for css hvor en class har en specifik opgave såsom at lave et element kun flex eller gøre en font større fx
+Ellers havde jeg også tænkt at bruge utility class, som er det bootstrap og tailwind bruger for css, hvor en class har en specifik opgave såsom at lave et element som kun gøre flex eller en font større fx.
 ```
 //CSS
 
@@ -46,7 +46,7 @@ Ellers havde jeg også tænkt at bruge utility class som er det bootstrap og tai
   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 </div>
 ```
-Men jeg syndes at ville blive en smule for meget for nu og holdte mig til at lave de class'er jeg har nu lavet.
+Men jeg syndes at ville blive en smule for meget for nu og holdte mig til at lave de classes jeg har nu lavet.
     
 ### Mappestruktur
 Jeg har også valgt at lave folders til både CSS og JS men siden der kun er en fil i hver af dem, kunne det godt have blive fjernet men jeg kan godt lige at have folders, hvis man skulle tilføje en extra fil for en af dem.
@@ -57,7 +57,7 @@ Så har jeg en img folder, hvor jeg har prøvet at lave så mange folders som mu
 
 
 ## Validering af HTML, CSS og JS
-Som der kan ses er alle tre af mine filer valideret uden at nogen af dem fejlede 
+Som der kan ses er alle tre af mine filer valideret uden at nogen af dem fejlede. 
 
 ### Validering af HTML
 ![HTML validated.](img/readme-images/html-validated.png)
@@ -70,7 +70,7 @@ Som der kan ses er alle tre af mine filer valideret uden at nogen af dem fejlede
 
 
 ## JavaScript datastruktur
-Min data struktur er hvor jeg har min JSON fil for produktet hvor den indholder et array of objects som indholder mono strings som deres type siden jeg bruger dem til at hjælpe mig med at finde den korrkte frave og billeder der skal blive vist ud fra den udvalgte farve af knapperne
+Min data struktur er hvor jeg har min JSON fil for produktet, hvor den indholder et array of objects som indholder mono strings, som deres type siden jeg bruger dem til at hjælpe mig med at finde den korrkte frave og billeder der skal blive vist ud fra den udvalgte farve af knapperne.
 
 ![Json object.](img/readme-images/data-structure.png)
 
